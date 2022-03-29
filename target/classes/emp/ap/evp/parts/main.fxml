@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.BorderPane?>
+<Pane fx:id="window" stylesheets="@styles/main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="emp.ap.evp.parts.controllers.MainController">
+    <children>
+        <MenuBar fx:id="menu">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem fx:id="open" mnemonicParsing="false" text="Open File" />
+                        <MenuItem fx:id="exit" mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+      <VBox layoutY="27.2" styleClass="content">
+         <children>
+             <BorderPane fx:id="playArea">
+
+             </BorderPane>
+              <HBox fx:id="mediaBar">
+                  <children>
+                  <GridPane  styleClass="menuBarGrid">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" />
+                      <ColumnConstraints hgrow="ALWAYS" maxWidth="1000.0" minWidth="300.0" prefWidth="450.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="120.0" prefWidth="150.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" valignment="CENTER" vgrow="NEVER" />
+                    </rowConstraints>
+                     <children>
+                            <Button fx:id="playButton" mnemonicParsing="false" text="Button" />
+                            <Slider fx:id="time" GridPane.columnIndex="1" />
+                            <Slider fx:id="volume" GridPane.columnIndex="2" />
+                     </children>
+                  </GridPane>
+                  </children>
+              </HBox>
+         </children>
+      </VBox>
+    </children>
+
+</Pane>

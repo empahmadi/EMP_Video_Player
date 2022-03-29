@@ -1,0 +1,55 @@
+
+#window {
+    -fx-pref-height: 650;
+    -fx-pref-width: 700;
+}
+
+#menu {
+    -fx-fit-to-width: true;
+    -fx-border-width: 0;
+}
+
+#menu menus Menu {
+    -fx-border-width: 0;
+    -fx-border-insets: 0;
+}
+
+#menu menus Menu items MenuItem {
+
+}
+/* general */
+.content{
+    -fx-pref-width: 700;
+    -fx-pref-height: 622.8;
+}
+/*media bar*/
+#mediaBar{
+    -fx-fit-to-width: true;
+    -fx-pref-width: 700;
+    -fx-min-width: 500;
+    -fx-pref-height: 40;
+    -fx-background-color: #6a6a6a;
+    -fx-alignment: center;
+}
+
+.menuBarGrid{
+    -fx-pref-height: 40;
+    -fx-pref-width: 700;
+}
+
+#time{
+    -fx-pref-width: 450;
+
+}
+
+#playButton{
+    -fx-pref-width: 80;
+    -fx-pref-height: 40;
+}
+
+/* play area */
+
+#playArea{
+    -fx-pref-height: 550;
+    -fx-pref-width: 700;
+}
